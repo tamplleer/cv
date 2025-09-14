@@ -1,0 +1,17 @@
+{
+  "name": "@cv/icon",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.ts",
+  "dependencies": {
+    "@cv/custom-icon": "workspace:~",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {},
+  "moduleInfo": {
+    "color": "red",
+    "type": "sub-core"
+  }
+}

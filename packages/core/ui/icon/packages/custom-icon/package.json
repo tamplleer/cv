@@ -1,0 +1,19 @@
+{
+  "name": "@cv/custom-icon",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "generate:icons": "node scripts/generateImageMap.js"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {},
+  "moduleInfo": {
+    "color": "red",
+    "type": "sub-core"
+  }
+}

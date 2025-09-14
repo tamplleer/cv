@@ -1,0 +1,9 @@
+.custom-checkbox:checked + label::before {
+  background-color: theme("colors.primary.500");
+  background-image: url("./img/checkmark.svg");
+}
+
+.custom-checkbox-secondary:checked + label::before {
+  background-color: theme("colors.secondary.400");
+  background-image: url("./img/checkmark.svg");
+}

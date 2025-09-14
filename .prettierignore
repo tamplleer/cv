@@ -1,0 +1,9 @@
+**/*.html
+**/.git
+**/.svn
+**/.hg
+**/.md
+**/node_modules
+**/*.json
+**/*.yaml
+**/public

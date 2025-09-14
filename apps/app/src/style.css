@@ -1,0 +1,32 @@
+@media only screen and (min-device-width: 600px) {
+    body {
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        width: 100dvw;
+        height: 100dvh;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    margin: 0 auto;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+}
+
+.masked-image {
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+

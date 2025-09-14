@@ -1,0 +1,34 @@
+{
+  "name": "@cv/app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite --host",
+    "start-staging": "vite --mode staging",
+    "start-mock": "vite --host --mode mock",
+    "start-prod": "vite --mode prod",
+    "build": "vite build",
+    "build-staging": "vite build  --mode staging",
+    "build-prod": "vite build --mode prod",
+    "analyze": "npx vite-bundle-analyzer",
+    "preview": "vite preview"
+  },
+  "type": "module",
+  "dependencies": {
+    "@cv/api": "workspace:~",
+    "@cv/main": "workspace:~",
+    "@cv/env": "workspace:~",
+    "@cv/ui-components": "workspace:~",
+    "@cv/utils": "workspace:~",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "vite-bundle-analyzer": "1.1.0"
+  },
+  "moduleInfo": {
+    "color": "green",
+    "type": "app"
+  }
+}

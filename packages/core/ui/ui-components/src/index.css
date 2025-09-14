@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.scaleY {
+  transform: scaleY(-1);
+}
+
+.background-gray {
+  background: theme("colors.secondary.50") !important;
+}
+
+/* В ваш глобальный CSS (например, styles.css) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+:root {
+  /* Neutral */
+  --color-neutral-900: #14161A;
+  --color-neutral-800: #3C3E4B;
+  --color-neutral-500: #404960;
+  --color-neutral-400: #798298;
+  --color-neutral-300: #929CB2;
+  --color-neutral-200: #ABB5CC;
+  --color-neutral-100: #D8DCE5;
+  --color-neutral-50:  #ECEDEF;
+  --color-neutral-0:   #FFFFFF;
+
+  /* Status */
+  --color-error-800: #C93938;
+  --color-error-500: #E66D6D;
+  --color-error-300: #F9A5A5;
+  --color-warning-500: #F2B04E;
+
+  /* iOS-style background & text */
+  --color-bg: var(--color-neutral-0);
+  --color-text: var(--color-neutral-900);
+}
+
+[data-theme="dark"] {
+
+  /* Neutral */
+  --color-neutral-900: #FFFFFF;
+  --color-neutral-800: #ECEDEF;
+  --color-neutral-500: #D8DCE5;
+  --color-neutral-400: #ABB5CC;
+  --color-neutral-300: #929CB2;
+  --color-neutral-200: #798298;
+  --color-neutral-100: #404960;
+  --color-neutral-50:  #2C2E35;
+  --color-neutral-0:   #14161A;
+
+  /* Status */
+  --color-error-800: #F08080;
+  --color-error-500: #E66D6D;
+  --color-error-300: #F9A5A5;
+  --color-warning-500: #FFD27F;
+
+  /* iOS-style background & text */
+  --color-bg: var(--color-neutral-0);
+  --color-text: var(--color-neutral-900);
+}
+
+
+.wavy-title {
+  --s: 40px; /* размер волны */
+  --b: 8px; /* толщина линии */
+  position: relative;
+  display: inline-block;
+}
+
+
+.wavy-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 120px; /* высота области волны */
+  bottom: 0; /* располагаем волну снизу */
+  background: linear-gradient(red 0 0) left 0vw top 50% no-repeat;
+
+  --_g: calc(-.45*var(--s)), #0000 calc(99% - var(--b)), #000 calc(101% - var(--b)) 99%, #0000 101%;
+  --_s: calc(4*var(--s)) calc(3*var(--s));
+  --_r: calc(1.096*var(--s) + var(--b)/2);
+
+  -webkit-mask:
+          radial-gradient(var(--_r) at left 50% bottom var(--_g))
+          calc(50% - 2*var(--s)) calc(50% - 3*var(--s)/2)/var(--_s),
+          radial-gradient(var(--_r) at left 50% top var(--_g))
+          50% calc(50% + 3*var(--s)/2)/var(--_s);
+
+  mask:
+          radial-gradient(var(--_r) at left 50% bottom var(--_g))
+          calc(50% - 2*var(--s)) calc(50% - 3*var(--s)/2)/var(--_s),
+          radial-gradient(var(--_r) at left 50% top var(--_g))
+          50% calc(50% + 3*var(--s)/2)/var(--_s);
+
+  animation: waveSlide 6s infinite; /* проиграть 1 раз и остановиться */
+}
+
+@keyframes waveSlide {
+  to {
+    background-position: right -100vw top 50%;
+  }
+}

@@ -1,0 +1,48 @@
+.opacity-fade-in {
+  opacity: 0;
+  animation: opacity-up 0.5s ease forwards;
+}
+
+.opacity-fade-out {
+  opacity: 1;
+  animation: opacity-down 0.5s ease forwards;
+}
+
+@keyframes opacity-up {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-down {
+  to {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.1) translateY(-10px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+.jump {
+  animation: jump 0.4s ease-out infinite;
+}

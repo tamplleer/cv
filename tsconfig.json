@@ -1,0 +1,16 @@
+{
+  "extends": "./packages/core/utils/config/tsconfig.base.json",
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "include": [
+    "packages/**/*"
+  ],
+  "exclude": [
+    "packages/**/node_modules",
+    "dist",
+    "node_modules"
+  ]
+}
