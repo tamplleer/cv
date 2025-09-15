@@ -2,7 +2,7 @@ export const Switch = ({ selected, setSelected }: { selected: boolean, setSelect
   return <label className="relative inline-flex items-center cursor-pointer">
     <input type="checkbox" className="sr-only peer" onClick={setSelected} checked={selected} />
     <div
-      className="peer ring-0 rounded-full outline-none
+      className="bg-neutral-50 peer ring-0 rounded-full outline-none
        duration-300 after:duration-500 w-8 h-8 shadow-md
         peer-focus:outline-none after:content-['🌒'] after:rounded-full
          after:absolute after:outline-none after:6 after:w-6 after:bg-gray-50

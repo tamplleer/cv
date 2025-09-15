@@ -13,9 +13,12 @@ export const UiProvider = ({ children }: PropsWithChildren) => {
     const theme = localStorage.getItem("theme");
     if (theme !== null && isTheme(Theme, theme)) {
       setTheme(theme);
-      updateBodyDataTheme(theme);
+      updateHtmlDataTheme(theme);
     } else {
-      localStorage.setItem("theme", "light");
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      localStorage.setItem("theme", systemTheme);
+      setTheme(systemTheme);
+      updateHtmlDataTheme(systemTheme);
     }
   }, []);
 
@@ -23,13 +26,13 @@ export const UiProvider = ({ children }: PropsWithChildren) => {
     const newTheme = theme === "light" ? "dark" : "light";
     localStorage.setItem("theme", newTheme);
     setTheme(newTheme);
-    updateBodyDataTheme(newTheme);
+    updateHtmlDataTheme(newTheme);
   };
   return <UIContext.Provider value={{ theme, switchTheme }}>{children}</UIContext.Provider>;
 };
 
-const updateBodyDataTheme = (theme: ThemeType) => {
-  document.body.setAttribute("data-theme", theme);
+const updateHtmlDataTheme = (theme: ThemeType) => {
+  document.documentElement.setAttribute("data-theme", theme);
 };
 
 
