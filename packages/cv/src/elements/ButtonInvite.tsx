@@ -3,7 +3,7 @@ import { useGetCvData } from "../../api/api";
 export const ButtonInvite = () => {
   const { data: { mainInfo } } = useGetCvData();
   return <div className="relative group">
-    <a href={"https://t.me/tamplleer"} target="_blank" rel="noopener noreferrer">
+    <a href={"https://t.me/why_not_pot"} target="_blank" rel="noopener noreferrer">
       <button
         className="relative inline-block p-px font-semibold leading-6 text-neutral-0 bg-neutral-900 shadow-2xl cursor-pointer rounded-2xl  transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 hover:shadow-primary-200"
       >
@@ -25,7 +25,7 @@ export const ButtonInvite = () => {
 
 export const ButtonInviteMobile = () => {
   return <div className="relative group">
-    <a href={"https://t.me/tamplleer"} target="_blank" rel="noopener noreferrer">
+    <a href={"https://t.me/why_not_pot"} target="_blank" rel="noopener noreferrer">
       <button
         className="relative inline-block p-px font-semibold leading-6 text-neutral-0 bg-neutral-900 shadow-2xl cursor-pointer rounded-2xl  transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 hover:shadow-primary-200"
       >
