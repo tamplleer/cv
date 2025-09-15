@@ -24,7 +24,8 @@ export enum TechStack {
   SocketIo = "Socket.io",
   ReactHookForms = "React hook forms",
   KMP = "Kotlin Multiplatform",
-  JUnit = "JUnit"
+  JUnit = "JUnit",
+  Mobx = "Mobx"
 }
 
 enum TechStackMobile {
@@ -156,6 +157,12 @@ const mapTechStack: Record<TechStackType, TechStackDataType> = {
     description: "Firebase",
     type: "",
     icon: "firebase",
+  },
+  Mobx: {
+    link: "",
+    description: "MobX",
+    type: "",
+    icon: "mobx",
   },
   Prettier: {
     link: "",

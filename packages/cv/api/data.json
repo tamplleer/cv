@@ -18,11 +18,6 @@
         "name": "",
         "link": "https://github.com/tamplleer",
         "icon": "github"
-      },
-      {
-        "name": "cv",
-        "link": "https://docs.google.com/document/d/11OBkUuplllXJqnT5Cyy9bIDcbc_PY3-_Fg4BUOp_2TE/edit?tab=t.0",
-        "icon": "file"
       }
     ]
   },
@@ -43,6 +38,7 @@
     "NextUI",
     "GitlabCI",
     "Firebase",
+    "Mobx",
     "ChartJs",
     "SocketIo",
     "Kotlin",

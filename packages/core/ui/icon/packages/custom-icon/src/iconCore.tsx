@@ -11,6 +11,7 @@ import Github from "../icons/github.svg?react";
 import Gitlab from "../icons/gitlab.svg?react";
 import Kotlin from "../icons/kotlin.svg?react";
 import Location from "../icons/location.svg?react";
+import Mobx from "../icons/mobx.svg?react";
 import Mui from "../icons/mui.svg?react";
 import Nextui from "../icons/nextUi.svg?react";
 import Nginx from "../icons/nginx.svg?react";
@@ -39,6 +40,7 @@ export type IconType =
     | "gitlab"
     | "kotlin"
     | "location"
+    | "mobx"
     | "mui"
     | "nextui"
     | "nginx"
@@ -67,6 +69,7 @@ export const IconMap: Record<IconType, (props: IconProps) => ReactElement> = {
   ["gitlab"]: ({ ...props }) => <Gitlab {...props} />,
   ["kotlin"]: ({ ...props }) => <Kotlin {...props} />,
   ["location"]: ({ ...props }) => <Location {...props} />,
+  ["mobx"]: ({ ...props }) => <Mobx {...props} />,
   ["mui"]: ({ ...props }) => <Mui {...props} />,
   ["nextui"]: ({ ...props }) => <Nextui {...props} />,
   ["nginx"]: ({ ...props }) => <Nginx {...props} />,
