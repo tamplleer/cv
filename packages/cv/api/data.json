@@ -361,7 +361,8 @@
       "team": "4",
       "duration": "8 месяцев",
       "type": "mobile",
-      "customer": "Заказная 🇷🇺"
+      "customer": "Заказная 🇷🇺",
+      "visible": false
     },
     {
       "name": "Симулятор рентгеновского детектора",
@@ -381,7 +382,8 @@
       "team": "1",
       "duration": "3 месяца",
       "type": "mobile",
-      "customer": "Заказная 🇷🇺"
+      "customer": "Заказная 🇷🇺",
+      "visible": false
     },
     {
       "name": "X-Ray детекторы",
@@ -412,7 +414,8 @@
       "team": "12",
       "duration": "3 месяца",
       "type": "mobile",
-      "customer": "Заказная 🇷🇺"
+      "customer": "Заказная 🇷🇺",
+      "visible": false
     },
     {
       "name": "Mobile Ads SDK for Solution Architects",
@@ -440,7 +443,8 @@
       "team": "2",
       "duration": "4 месяца",
       "type": "mobile",
-      "customer": "Заказная 🇷🇺"
+      "customer": "Заказная 🇷🇺",
+      "visible": false
     },
     {
       "name": "Приложение Android для настройки сложных датчиков и отслеживания данных",

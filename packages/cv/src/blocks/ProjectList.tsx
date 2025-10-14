@@ -10,7 +10,7 @@ import { StackElement } from "../elements/StackElement";
 
 enum typesProjectEnum {
   frontend = "Frontend",
-  mobile = "Mobile",
+  //mobile = "Mobile",
   all = "All",
 }
 
