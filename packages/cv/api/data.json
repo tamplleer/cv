@@ -42,7 +42,8 @@
     "ChartJs",
     "SocketIo",
     "Kotlin",
-    "JUnit",
+    "Playwrite",
+    "Vitest",
     "Angular"
   ],
   "aboutMe": {
@@ -50,6 +51,13 @@
     "simple": "Я — React-разработчик, люблю сложные задачи и выстраивание архитектуры. Работаю на результат, активно улучшаю продукты и процессы. Опыт — от соло до больших команд, готов наставлять и быть техлидом на проекте."
   },
   "achievements": [
+    {
+      "name": "Code Run",
+      "date": "2024-08-01",
+      "link": "https://coderun.yandex.ru",
+      "image": "https://yastatic.net/s3/contest/coderun/static/favicon/favicon.svg?v=1",
+      "description": "Вышел в финал соревнованя по алгоритмам"
+    },
     {
       "name": "Яндекс Cup 2023",
       "date": "2023-06-07",
@@ -63,13 +71,6 @@
       "link": "https://leader-id.ru/events/181556",
       "image": "kettle.webp",
       "description": "Организовывал с друзьями хакатон по решению идей для университета. При участии администрации."
-    },
-    {
-      "name": "Code Run",
-      "date": "2022-03-15",
-      "link": "https://coderun.yandex.ru",
-      "image": "https://yastatic.net/s3/contest/coderun/static/favicon/favicon.svg?v=1",
-      "description": "Вышел в финал соревнованя по алгоритмам"
     }
   ],
   "education": [
@@ -97,6 +98,17 @@
   ],
   "experiences": [
     {
+      "name": "Точка банк",
+      "link": "https://tochka.com",
+      "image": "tochka.webp",
+      "description": "Frontend разработчик react. Поддерживал ui kit, модифицировал скрип pre-commit для определения уровня специфичонсти между модулями, разрабатывал бизнес фичи для продукта с инфраструктурой на микрофронтендах с покрытием тестов",
+      "position": "Frontend Developer",
+      "workTime": {
+        "from": "2025-11-05",
+        "to": "present"
+      }
+    },
+    {
       "name": "7bits",
       "link": "https://7bits.it",
       "image": "https://static.tildacdn.com/tild3062-3330-4866-a436-323936646637/fav.svg",
@@ -104,7 +116,7 @@
       "position": "Frontend Developer",
       "workTime": {
         "from": "2020-09-02",
-        "to": "present"
+        "to": "2025-11-05"
       }
     },
     {

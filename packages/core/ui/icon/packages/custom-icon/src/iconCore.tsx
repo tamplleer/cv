@@ -15,6 +15,7 @@ import Mobx from "../icons/mobx.svg?react";
 import Mui from "../icons/mui.svg?react";
 import Nextui from "../icons/nextUi.svg?react";
 import Nginx from "../icons/nginx.svg?react";
+import Playwrite from "../icons/playwrite.svg?react";
 import Pnpm from "../icons/pnpm.svg?react";
 import React from "../icons/react.svg?react";
 import Reactquery from "../icons/reactQuery.svg?react";
@@ -44,6 +45,7 @@ export type IconType =
     | "mui"
     | "nextui"
     | "nginx"
+    | "playwrite"
     | "pnpm"
     | "react"
     | "reactquery"
@@ -73,6 +75,7 @@ export const IconMap: Record<IconType, (props: IconProps) => ReactElement> = {
   ["mui"]: ({ ...props }) => <Mui {...props} />,
   ["nextui"]: ({ ...props }) => <Nextui {...props} />,
   ["nginx"]: ({ ...props }) => <Nginx {...props} />,
+  ["playwrite"]: ({ ...props }) => <Playwrite {...props} />,
   ["pnpm"]: ({ ...props }) => <Pnpm {...props} />,
   ["react"]: ({ ...props }) => <React {...props} />,
   ["reactquery"]: ({ ...props }) => <Reactquery {...props} />,

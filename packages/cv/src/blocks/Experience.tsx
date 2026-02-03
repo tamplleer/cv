@@ -17,7 +17,7 @@ export const Experience = () => {
 const ExperienceElement = ({ experience }: { experience: ExperienceType }) => {
   return <Box className={"w-full"} gap={2}>
     <a href={experience.link} target="_blank" rel="noopener noreferrer">
-      <Image className={"aspect-square w-20 rounded-xl"} src={experience.image} alt={"лого учебной организациия"} />
+      <Image className={"aspect-square w-20 rounded-xl"} src={experience.image} alt={"лого организациия"} />
     </a>
       <Box flexDirection={"col"} className={"w-full text-start"} gap={1}>
         <Box justifyContent={"between"}>

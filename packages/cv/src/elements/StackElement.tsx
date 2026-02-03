@@ -25,6 +25,8 @@ export enum TechStack {
   ReactHookForms = "React hook forms",
   KMP = "Kotlin Multiplatform",
   JUnit = "JUnit",
+  Vitest = "Vitest",
+  Playwrite = "Playwrite",
   Mobx = "Mobx"
 }
 
@@ -60,6 +62,18 @@ type TechStackDataType = {
   emoji?: string,
 }
 const mapTechStack: Record<TechStackType, TechStackDataType> = {
+  Vitest: {
+    link: "",
+    description: "Vitest",
+    type: "",
+    icon: "vite",
+  },
+  Playwrite: {
+    link: "",
+    description: "Playwrite",
+    type: "",
+    icon: "playwrite",
+  },
   PnpmWorkspace: {
     link: "",
     description: "pnpm Workspace",
@@ -328,7 +342,7 @@ export const StackElement = ({ icon, isTitle }: { icon: TechStackType, isTitle?:
     <div key={icon} content={data?.description}>
       <div className={"text-xl flex flex-row gap-2"}>
         {data?.emoji ?? <Icon size={"24px"} icon={data.icon} />}
-        {isTitle?<Text>{data.description}</Text>:null}
+        {isTitle ? <Text>{data.description}</Text> : null}
       </div>
     </div>
   </Tooltip> : null;
